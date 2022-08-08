@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:gallinews/Screens/MenuScreen.dart';
+import 'package:gallinews/Screens/ReelsScreen.dart';
 import 'package:stacked_page_view/stacked_page_view.dart';
 
 
@@ -10,7 +12,7 @@ class HomeScreen extends StatefulWidget
   State<StatefulWidget> createState() {
     // TODO: implement createState
     return _HomeScreenState();
-    throw UnimplementedError();
+    // throw UnimplementedError();
   }
 }
 
@@ -21,8 +23,20 @@ class _HomeScreenState extends State<HomeScreen>
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
-    return  Material(
-      child: PageView.builder(
+    return  Scaffold(
+      appBar: AppBar(
+        title: const Text("My Feed"),
+        leading: IconButton(
+          onPressed: () {
+            Navigator.push(
+                context, 
+                MaterialPageRoute(builder: (context) => const MenuScreen())
+            );
+          },
+          icon: const Icon(Icons.arrow_back_ios),
+        ),
+      ),
+      body: PageView.builder(
           itemCount: 10,
           scrollDirection: Axis.vertical,
           controller: pageController,
@@ -30,9 +44,18 @@ class _HomeScreenState extends State<HomeScreen>
             return GestureDetector(
               onPanUpdate: (details) {
                 if (details.delta.dx > 0) {
-                  showAlertDialog(context, "Swiping To Right Direction");
+                  // showAlertDialog(context, "Swiping To Right Direction");
+
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => const MenuScreen())
+                  );
                 } else {
-                  showAlertDialog(context, "Swiping To Left Direction");
+                  // showAlertDialog(context, "Swiping To Left Direction");
+                  Navigator.push(
+                      context, 
+                      MaterialPageRoute(builder: (context) => const ReelsScreen())
+                  );
                 }
               },
               child: StackPageView(
