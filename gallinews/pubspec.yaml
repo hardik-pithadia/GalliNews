@@ -30,6 +30,8 @@ dependencies:
   flutter:
     sdk: flutter
   stacked_page_view: any
+  easy_search_bar: any
+  intrinsic_grid_view: any
 
 
   # The following adds the Cupertino Icons font to your application.
