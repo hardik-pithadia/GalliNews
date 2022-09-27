@@ -32,7 +32,7 @@ class MyApp extends StatelessWidget
         //     icon: const Icon(Icons.arrow_back_ios),
         //   ),
         // ),
-        body: HomeScreen(),
+        body: HomeScreen(categoryId: "20544"),
       ),
     );
     throw UnimplementedError();

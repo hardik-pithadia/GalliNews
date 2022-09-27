@@ -9,13 +9,13 @@ import 'package:gallinews/services/api_service.dart';
 
 class HomeScreen extends StatefulWidget
 {
-  const HomeScreen({Key? key}) : super(key: key);
+  const HomeScreen({Key? key, required this.categoryId}) : super(key: key);
+  final String categoryId;
 
   @override
   State<StatefulWidget> createState() {
     // TODO: implement createState
     return _HomeScreenState();
-    // throw UnimplementedError();
   }
 }
 
@@ -31,7 +31,8 @@ class _HomeScreenState extends State<HomeScreen>
   }
 
   void _getNewsData() async {
-    _newsModel = (await ApiService().getNews())!;
+    debugPrint("CATEGORY ID : ${widget.categoryId}");
+    _newsModel = (await ApiService().getNews(widget.categoryId))!;
     Future.delayed(const Duration(seconds: 1)).then((value) => setState(() {}));
   }
 

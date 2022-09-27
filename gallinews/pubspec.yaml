@@ -34,6 +34,7 @@ dependencies:
   intrinsic_grid_view: any
   http: any
   flutter_html: any
+  url_launcher: any
 
 
   # The following adds the Cupertino Icons font to your application.

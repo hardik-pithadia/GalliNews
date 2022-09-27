@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:easy_search_bar/easy_search_bar.dart';
+import 'package:gallinews/Screens/HomeScreen.dart';
 import 'package:intrinsic_grid_view/intrinsic_grid_view.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class MenuScreen extends StatefulWidget
 {
@@ -10,7 +12,6 @@ class MenuScreen extends StatefulWidget
   State<StatefulWidget> createState() {
     // TODO: implement createState
     return _MenuScreenState();
-    throw UnimplementedError();
   }
 }
 
@@ -57,6 +58,7 @@ class _MenuScreenState extends State<MenuScreen>
                       child: GestureDetector(
                         onTap: () {
                           debugPrint("Subscribe To whatsApp Button Clicked");
+                          launchWhatsApp();
                         },
                         child: Container(
                           decoration: const BoxDecoration(
@@ -219,26 +221,35 @@ class _MenuScreenState extends State<MenuScreen>
                             height: 110,
                             width: 110,
                             // color: Colors.pink,
-                            child: Card(
-                              elevation: 6,
-                              child: Column(
-                                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                                crossAxisAlignment: CrossAxisAlignment.center,
-                                children: const [
-                                  Icon(
-                                    Icons.new_releases_rounded,
-                                    size: 45,
-                                  ),
-
-                                  Text(
-                                    "Breaking News",
-                                    textAlign: TextAlign.center,
-                                    style: TextStyle(
-                                        fontSize: 17,
-                                        fontWeight: FontWeight.w600
+                            child: GestureDetector(
+                              onTap: () {
+                                debugPrint("Breaking New Clicked");
+                                Navigator.push(
+                                    context,
+                                    MaterialPageRoute(builder: (context) => const HomeScreen(categoryId: "20538"))
+                                );
+                              },
+                              child: Card(
+                                elevation: 6,
+                                child: Column(
+                                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                  children: const [
+                                    Icon(
+                                      Icons.new_releases_rounded,
+                                      size: 45,
                                     ),
-                                  )
-                                ],
+
+                                    Text(
+                                      "Breaking News",
+                                      textAlign: TextAlign.center,
+                                      style: TextStyle(
+                                          fontSize: 17,
+                                          fontWeight: FontWeight.w600
+                                      ),
+                                    )
+                                  ],
+                                ),
                               ),
                             )
                           ),
@@ -249,26 +260,36 @@ class _MenuScreenState extends State<MenuScreen>
                               height: 110,
                               width: 110,
                               // color: Colors.pink,
-                              child: Card(
-                                elevation: 6,
-                                child: Column(
-                                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                                  crossAxisAlignment: CrossAxisAlignment.center,
-                                  children: const [
-                                    Icon(
-                                      Icons.new_releases_rounded,
-                                      size: 45,
-                                    ),
+                              child: GestureDetector(
+                                onTap: () {
+                                  debugPrint("All News Clicked");
 
-                                    Text(
-                                      "All News",
-                                      textAlign: TextAlign.center,
-                                      style: TextStyle(
-                                        fontSize: 17,
-                                        fontWeight: FontWeight.w600
+                                  Navigator.push(
+                                      context,
+                                      MaterialPageRoute(builder: (context) => const HomeScreen(categoryId: "20544"))
+                                  );
+                                },
+                                child: Card(
+                                  elevation: 6,
+                                  child: Column(
+                                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                    crossAxisAlignment: CrossAxisAlignment.center,
+                                    children: const [
+                                      Icon(
+                                        Icons.new_releases_rounded,
+                                        size: 45,
                                       ),
-                                    )
-                                  ],
+
+                                      Text(
+                                        "All News",
+                                        textAlign: TextAlign.center,
+                                        style: TextStyle(
+                                          fontSize: 17,
+                                          fontWeight: FontWeight.w600
+                                        ),
+                                      )
+                                    ],
+                                  ),
                                 ),
                               )
                           ),
@@ -279,26 +300,36 @@ class _MenuScreenState extends State<MenuScreen>
                               height: 110,
                               width: 110,
                               // color: Colors.pink,
-                              child: Card(
-                                elevation: 6,
-                                child: Column(
-                                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                                  crossAxisAlignment: CrossAxisAlignment.center,
-                                  children: const [
-                                    Icon(
-                                      Icons.new_releases_rounded,
-                                      size: 45,
-                                    ),
+                              child: GestureDetector(
+                                onTap: () {
+                                  debugPrint("Filmy Clicked");
 
-                                    Text(
-                                      "Filmy",
-                                      textAlign: TextAlign.center,
-                                      style: TextStyle(
-                                        fontSize: 17,
-                                        fontWeight: FontWeight.w600
+                                  Navigator.push(
+                                      context,
+                                      MaterialPageRoute(builder: (context) => const HomeScreen(categoryId: "20538"))
+                                  );
+                                },
+                                child: Card(
+                                  elevation: 6,
+                                  child: Column(
+                                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                    crossAxisAlignment: CrossAxisAlignment.center,
+                                    children: const [
+                                      Icon(
+                                        Icons.new_releases_rounded,
+                                        size: 45,
                                       ),
-                                    )
-                                  ],
+
+                                      Text(
+                                        "Filmy",
+                                        textAlign: TextAlign.center,
+                                        style: TextStyle(
+                                          fontSize: 17,
+                                          fontWeight: FontWeight.w600
+                                        ),
+                                      )
+                                    ],
+                                  ),
                                 ),
                               )
                           ),
@@ -320,26 +351,35 @@ class _MenuScreenState extends State<MenuScreen>
                               height: 110,
                               width: 110,
                               // color: Colors.pink,
-                              child: Card(
-                                elevation: 6,
-                                child: Column(
-                                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                                  crossAxisAlignment: CrossAxisAlignment.center,
-                                  children: const [
-                                    Icon(
-                                      Icons.new_releases_rounded,
-                                      size: 45,
-                                    ),
-
-                                    Text(
-                                      "Crime",
-                                      textAlign: TextAlign.center,
-                                      style: TextStyle(
-                                          fontSize: 17,
-                                          fontWeight: FontWeight.w600
+                              child: GestureDetector(
+                                onTap: () {
+                                  debugPrint("Crime Clicked");
+                                  Navigator.push(
+                                      context,
+                                      MaterialPageRoute(builder: (context) => const HomeScreen(categoryId: "20539"))
+                                  );
+                                },
+                                child: Card(
+                                  elevation: 6,
+                                  child: Column(
+                                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                    crossAxisAlignment: CrossAxisAlignment.center,
+                                    children: const [
+                                      Icon(
+                                        Icons.new_releases_rounded,
+                                        size: 45,
                                       ),
-                                    )
-                                  ],
+
+                                      Text(
+                                        "Crime",
+                                        textAlign: TextAlign.center,
+                                        style: TextStyle(
+                                            fontSize: 17,
+                                            fontWeight: FontWeight.w600
+                                        ),
+                                      )
+                                    ],
+                                  ),
                                 ),
                               )
                           ),
@@ -350,26 +390,36 @@ class _MenuScreenState extends State<MenuScreen>
                               height: 110,
                               width: 110,
                               // color: Colors.pink,
-                              child: Card(
-                                elevation: 6,
-                                child: Column(
-                                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                                  crossAxisAlignment: CrossAxisAlignment.center,
-                                  children: const [
-                                    Icon(
-                                      Icons.new_releases_rounded,
-                                      size: 45,
-                                    ),
+                              child: GestureDetector(
+                                onTap: () {
+                                  debugPrint("Politics Clicked");
 
-                                    Text(
-                                      "Politics",
-                                      textAlign: TextAlign.center,
-                                      style: TextStyle(
-                                          fontSize: 17,
-                                          fontWeight: FontWeight.w600
+                                  Navigator.push(
+                                      context,
+                                      MaterialPageRoute(builder: (context) => const HomeScreen(categoryId: "20547"))
+                                  );
+                                },
+                                child: Card(
+                                  elevation: 6,
+                                  child: Column(
+                                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                    crossAxisAlignment: CrossAxisAlignment.center,
+                                    children: const [
+                                      Icon(
+                                        Icons.new_releases_rounded,
+                                        size: 45,
                                       ),
-                                    )
-                                  ],
+
+                                      Text(
+                                        "Politics",
+                                        textAlign: TextAlign.center,
+                                        style: TextStyle(
+                                            fontSize: 17,
+                                            fontWeight: FontWeight.w600
+                                        ),
+                                      )
+                                    ],
+                                  ),
                                 ),
                               )
                           ),
@@ -380,26 +430,35 @@ class _MenuScreenState extends State<MenuScreen>
                               height: 110,
                               width: 110,
                               // color: Colors.pink,
-                              child: Card(
-                                elevation: 6,
-                                child: Column(
-                                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                                  crossAxisAlignment: CrossAxisAlignment.center,
-                                  children: const [
-                                    Icon(
-                                      Icons.new_releases_rounded,
-                                      size: 45,
-                                    ),
-
-                                    Text(
-                                      "Sports",
-                                      textAlign: TextAlign.center,
-                                      style: TextStyle(
-                                          fontSize: 17,
-                                          fontWeight: FontWeight.w600
+                              child: GestureDetector(
+                                onTap: () {
+                                  debugPrint("Sports Clicked");
+                                  Navigator.push(
+                                      context,
+                                      MaterialPageRoute(builder: (context) => const HomeScreen(categoryId: "20551"))
+                                  );
+                                },
+                                child: Card(
+                                  elevation: 6,
+                                  child: Column(
+                                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                    crossAxisAlignment: CrossAxisAlignment.center,
+                                    children: const [
+                                      Icon(
+                                        Icons.new_releases_rounded,
+                                        size: 45,
                                       ),
-                                    )
-                                  ],
+
+                                      Text(
+                                        "Sports",
+                                        textAlign: TextAlign.center,
+                                        style: TextStyle(
+                                            fontSize: 17,
+                                            fontWeight: FontWeight.w600
+                                        ),
+                                      )
+                                    ],
+                                  ),
                                 ),
                               )
                           ),
@@ -421,26 +480,31 @@ class _MenuScreenState extends State<MenuScreen>
                               height: 110,
                               width: 110,
                               // color: Colors.pink,
-                              child: Card(
-                                elevation: 6,
-                                child: Column(
-                                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                                  crossAxisAlignment: CrossAxisAlignment.center,
-                                  children: const [
-                                    Icon(
-                                      Icons.new_releases_rounded,
-                                      size: 45,
-                                    ),
-
-                                    Text(
-                                      "Shayri",
-                                      textAlign: TextAlign.center,
-                                      style: TextStyle(
-                                          fontSize: 17,
-                                          fontWeight: FontWeight.w600
+                              child: GestureDetector(
+                                onTap: () {
+                                  debugPrint("Shayri Clicked");
+                                },
+                                child: Card(
+                                  elevation: 6,
+                                  child: Column(
+                                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                    crossAxisAlignment: CrossAxisAlignment.center,
+                                    children: const [
+                                      Icon(
+                                        Icons.new_releases_rounded,
+                                        size: 45,
                                       ),
-                                    )
-                                  ],
+
+                                      Text(
+                                        "Shayri",
+                                        textAlign: TextAlign.center,
+                                        style: TextStyle(
+                                            fontSize: 17,
+                                            fontWeight: FontWeight.w600
+                                        ),
+                                      )
+                                    ],
+                                  ),
                                 ),
                               )
                           ),
@@ -451,60 +515,65 @@ class _MenuScreenState extends State<MenuScreen>
                               height: 110,
                               width: 110,
                               // color: Colors.pink,
-                              child: Card(
-                                elevation: 6,
-                                child: Column(
-                                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                                  crossAxisAlignment: CrossAxisAlignment.center,
-                                  children: const [
-                                    Icon(
-                                      Icons.new_releases_rounded,
-                                      size: 45,
-                                    ),
-
-                                    Text(
-                                      "Share",
-                                      textAlign: TextAlign.center,
-                                      style: TextStyle(
-                                          fontSize: 17,
-                                          fontWeight: FontWeight.w600
+                              child: GestureDetector(
+                                onTap: () {
+                                  debugPrint("Share Clicked");
+                                },
+                                child: Card(
+                                  elevation: 6,
+                                  child: Column(
+                                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                    crossAxisAlignment: CrossAxisAlignment.center,
+                                    children: const [
+                                      Icon(
+                                        Icons.new_releases_rounded,
+                                        size: 45,
                                       ),
-                                    )
-                                  ],
+
+                                      Text(
+                                        "Share",
+                                        textAlign: TextAlign.center,
+                                        style: TextStyle(
+                                            fontSize: 17,
+                                            fontWeight: FontWeight.w600
+                                        ),
+                                      )
+                                    ],
+                                  ),
                                 ),
                               )
                           ),
                         ),
 
-                        Expanded(
-                          child: SizedBox(
-                              height: 110,
-                              width: 110,
-                              // color: Colors.pink,
-                              child: Card(
-                                elevation: 6,
-                                child: Column(
-                                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                                  crossAxisAlignment: CrossAxisAlignment.center,
-                                  children: const [
-                                    Icon(
-                                      Icons.new_releases_rounded,
-                                      size: 45,
-                                    ),
-
-                                    Text(
-                                      "Sports",
-                                      textAlign: TextAlign.center,
-                                      style: TextStyle(
-                                          fontSize: 17,
-                                          fontWeight: FontWeight.w600
-                                      ),
-                                    )
-                                  ],
-                                ),
-                              )
-                          ),
-                        ),
+                        // Expanded(
+                        //   child: SizedBox(
+                        //       height: 110,
+                        //       width: 110,
+                        //       // color: Colors.pink,
+                        //       child: Card(
+                        //         elevation: 6,
+                        //         child: Column(
+                        //           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        //           crossAxisAlignment: CrossAxisAlignment.center,
+                        //           children: const [
+                        //             Icon(
+                        //               Icons.new_releases_rounded,
+                        //               size: 45,
+                        //             ),
+                        //
+                        //             Text(
+                        //               "Sports",
+                        //               textAlign: TextAlign.center,
+                        //               style: TextStyle(
+                        //                   fontSize: 17,
+                        //                   fontWeight: FontWeight.w600
+                        //               ),
+                        //             )
+                        //           ],
+                        //         ),
+                        //       )
+                        //   ),
+                        // ),
                       ],
                     ),
                   ),
@@ -516,5 +585,23 @@ class _MenuScreenState extends State<MenuScreen>
       ),
     );
     throw UnimplementedError();
+  }
+
+  void launchWhatsApp() async {
+    debugPrint("launchWhatsApp");
+
+    var whatsapp = "+917666240144";
+    var whatsappAndroid =Uri.parse("whatsapp://send?phone=$whatsapp&text=hello");
+
+    if (await canLaunchUrl(whatsappAndroid))
+    {
+      await launchUrl(whatsappAndroid);
+    } else {
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(
+          content: Text("WhatsApp is not installed on the device"),
+        ),
+      );
+    }
   }
 }
