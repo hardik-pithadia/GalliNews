@@ -611,6 +611,7 @@ class _MenuScreenState extends State<MenuScreen>
                               child: GestureDetector(
                                 onTap: () {
                                   debugPrint("Desh Clicked");
+
                                   // Navigator.push(
                                   //     context,
                                   //     MaterialPageRoute(builder: (context) => const HomeScreen(categoryId: "20538"))
@@ -651,6 +652,566 @@ class _MenuScreenState extends State<MenuScreen>
                                 onTap: () {
                                   debugPrint("Mumbai Clicked");
 
+                                  showDialog(
+                                      context: context,
+                                      builder: (BuildContext context) {
+                                        return AlertDialog(
+                                          scrollable: true,
+                                          title: const Text(
+                                            'Mumbai',
+                                            style: TextStyle(
+                                              fontWeight: FontWeight.bold,
+                                              fontSize: 20
+                                            ),
+                                          ),
+                                          content: Form(
+                                            child: Column(
+                                              mainAxisAlignment: MainAxisAlignment.end,
+                                              children: <Widget>[
+                                                GestureDetector(
+                                                  onTap: () {
+                                                    debugPrint("Andheri East 166");
+                                                  },
+                                                  child: const Text(
+                                                      "Andheri East 166",
+                                                    style: TextStyle(
+                                                      fontSize: 20,
+                                                      fontWeight: FontWeight.w400
+                                                    ),
+                                                  ),
+                                                ),
+
+                                                const SizedBox(height: 30,),
+
+                                                GestureDetector(
+                                                  onTap: () {
+                                                    debugPrint("Andheri West 165");
+                                                  },
+                                                  child: const Text(
+                                                    "Andheri West 165",
+                                                    style: TextStyle(
+                                                        fontSize: 20,
+                                                        fontWeight: FontWeight.w400
+                                                    ),
+                                                  ),
+                                                ),
+
+                                                const SizedBox(height: 30,),
+
+                                                GestureDetector(
+                                                  onTap: () {
+                                                    debugPrint("Bandra East 176");
+                                                  },
+                                                  child: const Text(
+                                                    "Bandra East 176",
+                                                    style: TextStyle(
+                                                        fontSize: 20,
+                                                        fontWeight: FontWeight.w400
+                                                    ),
+                                                  ),
+                                                ),
+
+                                                const SizedBox(height: 30,),
+
+                                                GestureDetector(
+                                                  onTap: () {
+                                                    debugPrint("Bandra West 177");
+                                                  },
+                                                  child: const Text(
+                                                    "Bandra West 177",
+                                                    style: TextStyle(
+                                                        fontSize: 20,
+                                                        fontWeight: FontWeight.w400
+                                                    ),
+                                                  ),
+                                                ),
+
+                                                const SizedBox(height: 30,),
+
+                                                GestureDetector(
+                                                  onTap: () {
+                                                    debugPrint("Bhandup West 157");
+                                                  },
+                                                  child: const Text(
+                                                    "Bhandup West 157",
+                                                    style: TextStyle(
+                                                        fontSize: 20,
+                                                        fontWeight: FontWeight.w400
+                                                    ),
+                                                  ),
+                                                ),
+
+                                                const SizedBox(height: 30,),
+
+                                                GestureDetector(
+                                                  onTap: () {
+                                                    debugPrint("Borivali 152");
+                                                  },
+                                                  child: const Text(
+                                                    "Borivali 152",
+                                                    style: TextStyle(
+                                                        fontSize: 20,
+                                                        fontWeight: FontWeight.w400
+                                                    ),
+                                                  ),
+                                                ),
+
+                                                const SizedBox(height: 30,),
+
+                                                GestureDetector(
+                                                  onTap: () {
+                                                    debugPrint("Byculla 184");
+                                                  },
+                                                  child: const Text(
+                                                    "Byculla 184",
+                                                    style: TextStyle(
+                                                        fontSize: 20,
+                                                        fontWeight: FontWeight.w400
+                                                    ),
+                                                  ),
+                                                ),
+
+                                                const SizedBox(height: 30,),
+
+                                                GestureDetector(
+                                                  onTap: () {
+                                                    debugPrint("Chandivali 168");
+                                                  },
+                                                  child: const Text(
+                                                    "Chandivali 168",
+                                                    style: TextStyle(
+                                                        fontSize: 20,
+                                                        fontWeight: FontWeight.w400
+                                                    ),
+                                                  ),
+                                                ),
+
+                                                const SizedBox(height: 30,),
+
+                                                GestureDetector(
+                                                  onTap: () {
+                                                    debugPrint("Charkop 161");
+                                                  },
+                                                  child: const Text(
+                                                    "Charkop 161",
+                                                    style: TextStyle(
+                                                        fontSize: 20,
+                                                        fontWeight: FontWeight.w400
+                                                    ),
+                                                  ),
+                                                ),
+
+                                                const SizedBox(height: 30,),
+
+                                                GestureDetector(
+                                                  onTap: () {
+                                                    debugPrint("Chembur 173");
+                                                  },
+                                                  child: const Text(
+                                                    "Chembur 173",
+                                                    style: TextStyle(
+                                                        fontSize: 20,
+                                                        fontWeight: FontWeight.w400
+                                                    ),
+                                                  ),
+                                                ),
+
+                                                const SizedBox(height: 30,),
+
+                                                GestureDetector(
+                                                  onTap: () {
+                                                    debugPrint("Colaba 187");
+                                                  },
+                                                  child: const Text(
+                                                    "Colaba 187",
+                                                    style: TextStyle(
+                                                        fontSize: 20,
+                                                        fontWeight: FontWeight.w400
+                                                    ),
+                                                  ),
+                                                ),
+
+                                                const SizedBox(height: 30,),
+
+                                                GestureDetector(
+                                                  onTap: () {
+                                                    debugPrint("Dahisar 153");
+                                                  },
+                                                  child: const Text(
+                                                    "Dahisar 153",
+                                                    style: TextStyle(
+                                                        fontSize: 20,
+                                                        fontWeight: FontWeight.w400
+                                                    ),
+                                                  ),
+                                                ),
+
+                                                const SizedBox(height: 30,),
+
+                                                GestureDetector(
+                                                  onTap: () {
+                                                    debugPrint("Dharavi 178");
+                                                  },
+                                                  child: const Text(
+                                                    "Dharavi 178",
+                                                    style: TextStyle(
+                                                        fontSize: 20,
+                                                        fontWeight: FontWeight.w400
+                                                    ),
+                                                  ),
+                                                ),
+
+                                                const SizedBox(height: 30,),
+
+                                                GestureDetector(
+                                                  onTap: () {
+                                                    debugPrint("Dindoshi 159");
+                                                  },
+                                                  child: const Text(
+                                                    "Dindoshi 159",
+                                                    style: TextStyle(
+                                                        fontSize: 20,
+                                                        fontWeight: FontWeight.w400
+                                                    ),
+                                                  ),
+                                                ),
+
+                                                const SizedBox(height: 30,),
+
+                                                GestureDetector(
+                                                  onTap: () {
+                                                    debugPrint("Dongri");
+                                                  },
+                                                  child: const Text(
+                                                    "Dongri",
+                                                    style: TextStyle(
+                                                        fontSize: 20,
+                                                        fontWeight: FontWeight.w400
+                                                    ),
+                                                  ),
+                                                ),
+
+                                                const SizedBox(height: 30,),
+
+                                                GestureDetector(
+                                                  onTap: () {
+                                                    debugPrint("Ghatkoper East 170");
+                                                  },
+                                                  child: const Text(
+                                                    "Ghatkoper East 170",
+                                                    style: TextStyle(
+                                                        fontSize: 20,
+                                                        fontWeight: FontWeight.w400
+                                                    ),
+                                                  ),
+                                                ),
+
+                                                const SizedBox(height: 30,),
+
+                                                GestureDetector(
+                                                  onTap: () {
+                                                    debugPrint("Ghatkoper West 169");
+                                                  },
+                                                  child: const Text(
+                                                    "Ghatkoper West 169",
+                                                    style: TextStyle(
+                                                        fontSize: 20,
+                                                        fontWeight: FontWeight.w400
+                                                    ),
+                                                  ),
+                                                ),
+
+                                                const SizedBox(height: 30,),
+
+                                                GestureDetector(
+                                                  onTap: () {
+                                                    debugPrint("Goregaon 163");
+                                                  },
+                                                  child: const Text(
+                                                    "Goregaon 163",
+                                                    style: TextStyle(
+                                                        fontSize: 20,
+                                                        fontWeight: FontWeight.w400
+                                                    ),
+                                                  ),
+                                                ),
+
+                                                const SizedBox(height: 30,),
+
+                                                GestureDetector(
+                                                  onTap: () {
+                                                    debugPrint("Jogeshwari East 158");
+                                                  },
+                                                  child: const Text(
+                                                    "Jogeshwari East 158",
+                                                    style: TextStyle(
+                                                        fontSize: 20,
+                                                        fontWeight: FontWeight.w400
+                                                    ),
+                                                  ),
+                                                ),
+
+                                                const SizedBox(height: 30,),
+
+                                                GestureDetector(
+                                                  onTap: () {
+                                                    debugPrint("Kalina 175");
+                                                  },
+                                                  child: const Text(
+                                                    "Kalina 175",
+                                                    style: TextStyle(
+                                                        fontSize: 20,
+                                                        fontWeight: FontWeight.w400
+                                                    ),
+                                                  ),
+                                                ),
+
+                                                const SizedBox(height: 30,),
+
+                                                GestureDetector(
+                                                  onTap: () {
+                                                    debugPrint("Kandivali East 160");
+                                                  },
+                                                  child: const Text(
+                                                    "Kandivali East 160",
+                                                    style: TextStyle(
+                                                        fontSize: 20,
+                                                        fontWeight: FontWeight.w400
+                                                    ),
+                                                  ),
+                                                ),
+
+                                                const SizedBox(height: 30,),
+
+                                                GestureDetector(
+                                                  onTap: () {
+                                                    debugPrint("Kurla 174");
+                                                  },
+                                                  child: const Text(
+                                                    "Kurla 174",
+                                                    style: TextStyle(
+                                                        fontSize: 20,
+                                                        fontWeight: FontWeight.w400
+                                                    ),
+                                                  ),
+                                                ),
+
+                                                const SizedBox(height: 30,),
+
+                                                GestureDetector(
+                                                  onTap: () {
+                                                    debugPrint("Mahim 181");
+                                                  },
+                                                  child: const Text(
+                                                    "Mahim 181",
+                                                    style: TextStyle(
+                                                        fontSize: 20,
+                                                        fontWeight: FontWeight.w400
+                                                    ),
+                                                  ),
+                                                ),
+
+                                                const SizedBox(height: 30,),
+
+                                                GestureDetector(
+                                                  onTap: () {
+                                                    debugPrint("Malad West 162");
+                                                  },
+                                                  child: const Text(
+                                                    "Malad West 162",
+                                                    style: TextStyle(
+                                                        fontSize: 20,
+                                                        fontWeight: FontWeight.w400
+                                                    ),
+                                                  ),
+                                                ),
+
+                                                const SizedBox(height: 30,),
+
+                                                GestureDetector(
+                                                  onTap: () {
+                                                    debugPrint("Malbar Hill 185");
+                                                  },
+                                                  child: const Text(
+                                                    "Malbar Hill 185",
+                                                    style: TextStyle(
+                                                        fontSize: 20,
+                                                        fontWeight: FontWeight.w400
+                                                    ),
+                                                  ),
+                                                ),
+
+                                                const SizedBox(height: 30,),
+
+                                                GestureDetector(
+                                                  onTap: () {
+                                                    debugPrint("Mankhurd 171");
+                                                  },
+                                                  child: const Text(
+                                                    "Mankhurd 171",
+                                                    style: TextStyle(
+                                                        fontSize: 20,
+                                                        fontWeight: FontWeight.w400
+                                                    ),
+                                                  ),
+                                                ),
+
+                                                const SizedBox(height: 30,),
+
+                                                GestureDetector(
+                                                  onTap: () {
+                                                    debugPrint("Mumbadevi 186");
+                                                  },
+                                                  child: const Text(
+                                                    "Mumbadevi 186",
+                                                    style: TextStyle(
+                                                        fontSize: 20,
+                                                        fontWeight: FontWeight.w400
+                                                    ),
+                                                  ),
+                                                ),
+
+                                                const SizedBox(height: 30,),
+
+                                                GestureDetector(
+                                                  onTap: () {
+                                                    debugPrint("Mumbai");
+                                                  },
+                                                  child: const Text(
+                                                    "Mumbai",
+                                                    style: TextStyle(
+                                                        fontSize: 20,
+                                                        fontWeight: FontWeight.w400
+                                                    ),
+                                                  ),
+                                                ),
+
+                                                const SizedBox(height: 30,),
+
+                                                GestureDetector(
+                                                  onTap: () {
+                                                    debugPrint("Shiwdi 183");
+                                                  },
+                                                  child: const Text(
+                                                    "Shiwdi 183",
+                                                    style: TextStyle(
+                                                        fontSize: 20,
+                                                        fontWeight: FontWeight.w400
+                                                    ),
+                                                  ),
+                                                ),
+
+                                                const SizedBox(height: 30,),
+
+                                                GestureDetector(
+                                                  onTap: () {
+                                                    debugPrint("Sion Koliwada 179");
+                                                  },
+                                                  child: const Text(
+                                                    "Sion Koliwada 179",
+                                                    style: TextStyle(
+                                                        fontSize: 20,
+                                                        fontWeight: FontWeight.w400
+                                                    ),
+                                                  ),
+                                                ),
+
+                                                const SizedBox(height: 30,),
+
+                                                GestureDetector(
+                                                  onTap: () {
+                                                    debugPrint("Versova 164");
+                                                  },
+                                                  child: const Text(
+                                                    "Versova 164",
+                                                    style: TextStyle(
+                                                        fontSize: 20,
+                                                        fontWeight: FontWeight.w400
+                                                    ),
+                                                  ),
+                                                ),
+
+                                                const SizedBox(height: 30,),
+
+                                                GestureDetector(
+                                                  onTap: () {
+                                                    debugPrint("Vikhroli 156");
+                                                  },
+                                                  child: const Text(
+                                                    "Vikhroli 156",
+                                                    style: TextStyle(
+                                                        fontSize: 20,
+                                                        fontWeight: FontWeight.w400
+                                                    ),
+                                                  ),
+                                                ),
+
+                                                const SizedBox(height: 30,),
+
+                                                GestureDetector(
+                                                  onTap: () {
+                                                    debugPrint("Vile Parle 167");
+                                                  },
+                                                  child: const Text(
+                                                    "Vile Parle 167",
+                                                    style: TextStyle(
+                                                        fontSize: 20,
+                                                        fontWeight: FontWeight.w400
+                                                    ),
+                                                  ),
+                                                ),
+
+                                                const SizedBox(height: 30,),
+
+                                                GestureDetector(
+                                                  onTap: () {
+                                                    debugPrint("Wadala-Dadar 180");
+                                                  },
+                                                  child: const Text(
+                                                    "Wadala-Dadar 180",
+                                                    style: TextStyle(
+                                                        fontSize: 20,
+                                                        fontWeight: FontWeight.w400
+                                                    ),
+                                                  ),
+                                                ),
+
+                                                const SizedBox(height: 30,),
+
+                                                GestureDetector(
+                                                  onTap: () {
+                                                    debugPrint("Worli 182");
+                                                  },
+                                                  child: const Text(
+                                                    "Worli 182",
+                                                    style: TextStyle(
+                                                        fontSize: 20,
+                                                        fontWeight: FontWeight.w400
+                                                    ),
+                                                  ),
+                                                ),
+
+                                                const SizedBox(height: 30,),
+
+                                                GestureDetector(
+                                                  onTap: () {
+                                                    debugPrint("Navi Mumbai");
+                                                  },
+                                                  child: const Text(
+                                                    "Navi Mumbai",
+                                                    style: TextStyle(
+                                                        fontSize: 20,
+                                                        fontWeight: FontWeight.w400
+                                                    ),
+                                                  ),
+                                                ),
+                                              ],
+                                            ),
+                                          ),
+
+                                        );
+                                      });
+
                                   // Navigator.push(
                                   //     context,
                                   //     MaterialPageRoute(builder: (context) => const HomeScreen(categoryId: "20544"))
@@ -690,6 +1251,101 @@ class _MenuScreenState extends State<MenuScreen>
                               child: GestureDetector(
                                 onTap: () {
                                   debugPrint("Navi Mumbai Clicked");
+
+                                  showDialog(
+                                      context: context,
+                                      builder: (BuildContext context) {
+                                        return AlertDialog(
+                                          scrollable: true,
+                                          title: const Text(
+                                            'Navi Mumbai',
+                                            style: TextStyle(
+                                                fontWeight: FontWeight.bold,
+                                                fontSize: 20
+                                            ),
+                                          ),
+                                          content: Form(
+                                            child: Column(
+                                              mainAxisAlignment: MainAxisAlignment.end,
+                                              children: <Widget>[
+                                                GestureDetector(
+                                                  onTap: () {
+                                                    debugPrint("Belapur");
+                                                  },
+                                                  child: const Text(
+                                                    "Belapur",
+                                                    style: TextStyle(
+                                                        fontSize: 20,
+                                                        fontWeight: FontWeight.w400
+                                                    ),
+                                                  ),
+                                                ),
+
+                                                const SizedBox(height: 30,),
+
+                                                GestureDetector(
+                                                  onTap: () {
+                                                    debugPrint("Kharghar");
+                                                  },
+                                                  child: const Text(
+                                                    "Kharghar",
+                                                    style: TextStyle(
+                                                        fontSize: 20,
+                                                        fontWeight: FontWeight.w400
+                                                    ),
+                                                  ),
+                                                ),
+
+                                                const SizedBox(height: 30,),
+
+                                                GestureDetector(
+                                                  onTap: () {
+                                                    debugPrint("Navi Mumbai");
+                                                  },
+                                                  child: const Text(
+                                                    "Navi Mumbai",
+                                                    style: TextStyle(
+                                                        fontSize: 20,
+                                                        fontWeight: FontWeight.w400
+                                                    ),
+                                                  ),
+                                                ),
+
+                                                const SizedBox(height: 30,),
+
+                                                GestureDetector(
+                                                  onTap: () {
+                                                    debugPrint("Panvel");
+                                                  },
+                                                  child: const Text(
+                                                    "Panvel",
+                                                    style: TextStyle(
+                                                        fontSize: 20,
+                                                        fontWeight: FontWeight.w400
+                                                    ),
+                                                  ),
+                                                ),
+
+                                                const SizedBox(height: 30,),
+
+                                                GestureDetector(
+                                                  onTap: () {
+                                                    debugPrint("Vashi");
+                                                  },
+                                                  child: const Text(
+                                                    "Vashi",
+                                                    style: TextStyle(
+                                                        fontSize: 20,
+                                                        fontWeight: FontWeight.w400
+                                                    ),
+                                                  ),
+                                                ),
+                                              ],
+                                            ),
+                                          ),
+
+                                        );
+                                      });
 
                                   // Navigator.push(
                                   //     context,
@@ -742,6 +1398,101 @@ class _MenuScreenState extends State<MenuScreen>
                                 onTap: () {
                                   debugPrint("Thane Clicked");
 
+                                  showDialog(
+                                      context: context,
+                                      builder: (BuildContext context) {
+                                        return AlertDialog(
+                                          scrollable: true,
+                                          title: const Text(
+                                            'Thane',
+                                            style: TextStyle(
+                                                fontWeight: FontWeight.bold,
+                                                fontSize: 20
+                                            ),
+                                          ),
+                                          content: Form(
+                                            child: Column(
+                                              mainAxisAlignment: MainAxisAlignment.end,
+                                              children: <Widget>[
+                                                GestureDetector(
+                                                  onTap: () {
+                                                    debugPrint("Bhiwandi");
+                                                  },
+                                                  child: const Text(
+                                                    "Bhiwandi",
+                                                    style: TextStyle(
+                                                        fontSize: 20,
+                                                        fontWeight: FontWeight.w400
+                                                    ),
+                                                  ),
+                                                ),
+
+                                                const SizedBox(height: 30,),
+
+                                                GestureDetector(
+                                                  onTap: () {
+                                                    debugPrint("Kalyan");
+                                                  },
+                                                  child: const Text(
+                                                    "Kalyan",
+                                                    style: TextStyle(
+                                                        fontSize: 20,
+                                                        fontWeight: FontWeight.w400
+                                                    ),
+                                                  ),
+                                                ),
+
+                                                const SizedBox(height: 30,),
+
+                                                GestureDetector(
+                                                  onTap: () {
+                                                    debugPrint("Mira-Bhayandar");
+                                                  },
+                                                  child: const Text(
+                                                    "Mira-Bhayandar",
+                                                    style: TextStyle(
+                                                        fontSize: 20,
+                                                        fontWeight: FontWeight.w400
+                                                    ),
+                                                  ),
+                                                ),
+
+                                                const SizedBox(height: 30,),
+
+                                                GestureDetector(
+                                                  onTap: () {
+                                                    debugPrint("Mumbra");
+                                                  },
+                                                  child: const Text(
+                                                    "Mumbra",
+                                                    style: TextStyle(
+                                                        fontSize: 20,
+                                                        fontWeight: FontWeight.w400
+                                                    ),
+                                                  ),
+                                                ),
+
+                                                const SizedBox(height: 30,),
+
+                                                GestureDetector(
+                                                  onTap: () {
+                                                    debugPrint("Ulhasnagar");
+                                                  },
+                                                  child: const Text(
+                                                    "Ulhasnagar",
+                                                    style: TextStyle(
+                                                        fontSize: 20,
+                                                        fontWeight: FontWeight.w400
+                                                    ),
+                                                  ),
+                                                ),
+                                              ],
+                                            ),
+                                          ),
+
+                                        );
+                                      });
+
                                   // Navigator.push(
                                   //     context,
                                   //     MaterialPageRoute(builder: (context) => const HomeScreen(categoryId: "20539"))
@@ -782,6 +1533,56 @@ class _MenuScreenState extends State<MenuScreen>
                                 onTap: () {
                                   debugPrint("Palghar Clicked");
 
+                                  showDialog(
+                                      context: context,
+                                      builder: (BuildContext context) {
+                                        return AlertDialog(
+                                          scrollable: true,
+                                          title: const Text(
+                                            'Palghar',
+                                            style: TextStyle(
+                                                fontWeight: FontWeight.bold,
+                                                fontSize: 20
+                                            ),
+                                          ),
+                                          content: Form(
+                                            child: Column(
+                                              mainAxisAlignment: MainAxisAlignment.end,
+                                              children: <Widget>[
+                                                GestureDetector(
+                                                  onTap: () {
+                                                    debugPrint("Dahanu Road");
+                                                  },
+                                                  child: const Text(
+                                                    "Dahanu Road",
+                                                    style: TextStyle(
+                                                        fontSize: 20,
+                                                        fontWeight: FontWeight.w400
+                                                    ),
+                                                  ),
+                                                ),
+
+                                                const SizedBox(height: 30,),
+
+                                                GestureDetector(
+                                                  onTap: () {
+                                                    debugPrint("Vasai-Virar");
+                                                  },
+                                                  child: const Text(
+                                                    "Vasai-Virar",
+                                                    style: TextStyle(
+                                                        fontSize: 20,
+                                                        fontWeight: FontWeight.w400
+                                                    ),
+                                                  ),
+                                                ),
+                                              ],
+                                            ),
+                                          ),
+
+                                        );
+                                      });
+
                                   // Navigator.push(
                                   //     context,
                                   //     MaterialPageRoute(builder: (context) => const HomeScreen(categoryId: "20547"))
@@ -821,6 +1622,86 @@ class _MenuScreenState extends State<MenuScreen>
                               child: GestureDetector(
                                 onTap: () {
                                   debugPrint("Maharashtra Clicked");
+
+                                  showDialog(
+                                      context: context,
+                                      builder: (BuildContext context) {
+                                        return AlertDialog(
+                                          scrollable: true,
+                                          title: const Text(
+                                            'Maharashtra',
+                                            style: TextStyle(
+                                                fontWeight: FontWeight.bold,
+                                                fontSize: 20
+                                            ),
+                                          ),
+                                          content: Form(
+                                            child: Column(
+                                              mainAxisAlignment: MainAxisAlignment.end,
+                                              children: <Widget>[
+                                                GestureDetector(
+                                                  onTap: () {
+                                                    debugPrint("Amravati");
+                                                  },
+                                                  child: const Text(
+                                                    "Amravati",
+                                                    style: TextStyle(
+                                                        fontSize: 20,
+                                                        fontWeight: FontWeight.w400
+                                                    ),
+                                                  ),
+                                                ),
+
+                                                const SizedBox(height: 30,),
+
+                                                GestureDetector(
+                                                  onTap: () {
+                                                    debugPrint("Aurangabad");
+                                                  },
+                                                  child: const Text(
+                                                    "Aurangabad",
+                                                    style: TextStyle(
+                                                        fontSize: 20,
+                                                        fontWeight: FontWeight.w400
+                                                    ),
+                                                  ),
+                                                ),
+
+                                                const SizedBox(height: 30,),
+
+                                                GestureDetector(
+                                                  onTap: () {
+                                                    debugPrint("Nagpur");
+                                                  },
+                                                  child: const Text(
+                                                    "Nagpur",
+                                                    style: TextStyle(
+                                                        fontSize: 20,
+                                                        fontWeight: FontWeight.w400
+                                                    ),
+                                                  ),
+                                                ),
+
+                                                const SizedBox(height: 30,),
+
+                                                GestureDetector(
+                                                  onTap: () {
+                                                    debugPrint("Nasik");
+                                                  },
+                                                  child: const Text(
+                                                    "Nasik",
+                                                    style: TextStyle(
+                                                        fontSize: 20,
+                                                        fontWeight: FontWeight.w400
+                                                    ),
+                                                  ),
+                                                ),
+                                              ],
+                                            ),
+                                          ),
+
+                                        );
+                                      });
 
                                   // Navigator.push(
                                   //     context,
