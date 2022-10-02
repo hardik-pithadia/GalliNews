@@ -120,79 +120,79 @@ class _MenuScreenState extends State<MenuScreen>
               ],
             ),
 
-            Container(
-              margin: const EdgeInsets.only(top: 35, left: 15, right: 15),
-              // color: Colors.amber,
-              height: 175,
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                mainAxisAlignment: MainAxisAlignment.center,
-                children:    [
-                  const Expanded(
-                    child: Text(
-                      "Videos",
-                      style: TextStyle(
-                          fontSize: 20,
-                        fontWeight: FontWeight.bold
-                      ),
-                    ),
-                  ),
-
-                  SizedBox(
-                    height: 140,
-                    child: Row(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      mainAxisAlignment: MainAxisAlignment.start,
-                      children: <Widget>[
-                        Expanded(
-                          child: ListView.builder(
-                            scrollDirection: Axis.horizontal,
-                            shrinkWrap: true,
-                            itemCount: 10,
-                            itemBuilder: (context, index){
-                              return SizedBox(
-                                width: 100,
-                                height: 100,
-                                child: GestureDetector(
-                                  onTap: () {
-                                    debugPrint("Video ${index+1} Clicked");
-                                  },
-                                  child: Card(
-                                    // color: Colors.blue,
-                                    elevation: 5,
-                                    child: Column(
-                                      children: [
-                                        Container(
-                                          // height: 75,
-                                          padding: const EdgeInsets.all(5),
-                                          // height: 75,
-                                          child: Image.network(
-                                            "https://picsum.photos/250?image=9",
-                                            fit: BoxFit.fill,
-                                          ),
-                                        ),
-
-                                        Expanded(
-                                            child: Text(
-                                              "Video ${index+1}",
-                                              overflow: TextOverflow.fade,
-                                              textAlign: TextAlign.center,
-                                            )
-                                        )
-                                      ],
-                                    ),
-                                  ),
-                                )
-                              );
-                              },
-                          ),
-                        )
-                      ],
-                    ),
-                  )
-                ],
-              ),
-            ),
+            // Container(
+            //   margin: const EdgeInsets.only(top: 35, left: 15, right: 15),
+            //   // color: Colors.amber,
+            //   height: 175,
+            //   child: Column(
+            //     crossAxisAlignment: CrossAxisAlignment.start,
+            //     mainAxisAlignment: MainAxisAlignment.center,
+            //     children:    [
+            //       const Expanded(
+            //         child: Text(
+            //           "Videos",
+            //           style: TextStyle(
+            //               fontSize: 20,
+            //             fontWeight: FontWeight.bold
+            //           ),
+            //         ),
+            //       ),
+            //
+            //       SizedBox(
+            //         height: 140,
+            //         child: Row(
+            //           crossAxisAlignment: CrossAxisAlignment.start,
+            //           mainAxisAlignment: MainAxisAlignment.start,
+            //           children: <Widget>[
+            //             Expanded(
+            //               child: ListView.builder(
+            //                 scrollDirection: Axis.horizontal,
+            //                 shrinkWrap: true,
+            //                 itemCount: 10,
+            //                 itemBuilder: (context, index){
+            //                   return SizedBox(
+            //                     width: 100,
+            //                     height: 100,
+            //                     child: GestureDetector(
+            //                       onTap: () {
+            //                         debugPrint("Video ${index+1} Clicked");
+            //                       },
+            //                       child: Card(
+            //                         // color: Colors.blue,
+            //                         elevation: 5,
+            //                         child: Column(
+            //                           children: [
+            //                             Container(
+            //                               // height: 75,
+            //                               padding: const EdgeInsets.all(5),
+            //                               // height: 75,
+            //                               child: Image.network(
+            //                                 "https://picsum.photos/250?image=9",
+            //                                 fit: BoxFit.fill,
+            //                               ),
+            //                             ),
+            //
+            //                             Expanded(
+            //                                 child: Text(
+            //                                   "Video ${index+1}",
+            //                                   overflow: TextOverflow.fade,
+            //                                   textAlign: TextAlign.center,
+            //                                 )
+            //                             )
+            //                           ],
+            //                         ),
+            //                       ),
+            //                     )
+            //                   );
+            //                   },
+            //               ),
+            //             )
+            //           ],
+            //         ),
+            //       )
+            //     ],
+            //   ),
+            // ),
             
             Container(
               margin: const EdgeInsets.only(top: 35, left: 15, right: 15),
@@ -574,6 +574,482 @@ class _MenuScreenState extends State<MenuScreen>
                         //       )
                         //   ),
                         // ),
+                      ],
+                    ),
+                  ),
+                ],
+              ),
+            ),
+
+            Container(
+              margin: const EdgeInsets.only(top: 35, left: 15, right: 15),
+              height: 530,
+              // color: Colors.amber,
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                mainAxisAlignment: MainAxisAlignment.start,
+                children:  [
+                  const Expanded(
+                    child: Text(
+                      "Areas",
+                      style: TextStyle(
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold
+                      ),
+                    ),
+                  ),
+
+                  SizedBox(
+                    height: 110,
+                    child: Row(
+                      children: [
+                        Expanded(
+                          child: SizedBox(
+                              height: 110,
+                              width: 110,
+                              // color: Colors.pink,
+                              child: GestureDetector(
+                                onTap: () {
+                                  debugPrint("Desh Clicked");
+                                  // Navigator.push(
+                                  //     context,
+                                  //     MaterialPageRoute(builder: (context) => const HomeScreen(categoryId: "20538"))
+                                  // );
+                                },
+                                child: Card(
+                                  elevation: 6,
+                                  child: Column(
+                                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                    crossAxisAlignment: CrossAxisAlignment.center,
+                                    children: const [
+                                      Icon(
+                                        Icons.new_releases_rounded,
+                                        size: 45,
+                                      ),
+
+                                      Text(
+                                        "Desh",
+                                        textAlign: TextAlign.center,
+                                        style: TextStyle(
+                                            fontSize: 17,
+                                            fontWeight: FontWeight.w600
+                                        ),
+                                      )
+                                    ],
+                                  ),
+                                ),
+                              )
+                          ),
+                        ),
+
+                        Expanded(
+                          child: SizedBox(
+                              height: 110,
+                              width: 110,
+                              // color: Colors.pink,
+                              child: GestureDetector(
+                                onTap: () {
+                                  debugPrint("Mumbai Clicked");
+
+                                  // Navigator.push(
+                                  //     context,
+                                  //     MaterialPageRoute(builder: (context) => const HomeScreen(categoryId: "20544"))
+                                  // );
+                                },
+                                child: Card(
+                                  elevation: 6,
+                                  child: Column(
+                                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                    crossAxisAlignment: CrossAxisAlignment.center,
+                                    children: const [
+                                      Icon(
+                                        Icons.new_releases_rounded,
+                                        size: 45,
+                                      ),
+
+                                      Text(
+                                        "Mumbai",
+                                        textAlign: TextAlign.center,
+                                        style: TextStyle(
+                                            fontSize: 17,
+                                            fontWeight: FontWeight.w600
+                                        ),
+                                      )
+                                    ],
+                                  ),
+                                ),
+                              )
+                          ),
+                        ),
+
+                        Expanded(
+                          child: SizedBox(
+                              height: 110,
+                              width: 110,
+                              // color: Colors.pink,
+                              child: GestureDetector(
+                                onTap: () {
+                                  debugPrint("Navi Mumbai Clicked");
+
+                                  // Navigator.push(
+                                  //     context,
+                                  //     MaterialPageRoute(builder: (context) => const HomeScreen(categoryId: "20538"))
+                                  // );
+                                },
+                                child: Card(
+                                  elevation: 6,
+                                  child: Column(
+                                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                    crossAxisAlignment: CrossAxisAlignment.center,
+                                    children: const [
+                                      Icon(
+                                        Icons.new_releases_rounded,
+                                        size: 45,
+                                      ),
+
+                                      Text(
+                                        "Navi Mumbai",
+                                        textAlign: TextAlign.center,
+                                        style: TextStyle(
+                                            fontSize: 17,
+                                            fontWeight: FontWeight.w600
+                                        ),
+                                      )
+                                    ],
+                                  ),
+                                ),
+                              )
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+
+                  const SizedBox(
+                    height: 15,
+                  ),
+
+                  SizedBox(
+                    height: 110,
+                    child: Row(
+                      children: [
+                        Expanded(
+                          child: SizedBox(
+                              height: 110,
+                              width: 110,
+                              // color: Colors.pink,
+                              child: GestureDetector(
+                                onTap: () {
+                                  debugPrint("Thane Clicked");
+
+                                  // Navigator.push(
+                                  //     context,
+                                  //     MaterialPageRoute(builder: (context) => const HomeScreen(categoryId: "20539"))
+                                  // );
+                                },
+                                child: Card(
+                                  elevation: 6,
+                                  child: Column(
+                                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                    crossAxisAlignment: CrossAxisAlignment.center,
+                                    children: const [
+                                      Icon(
+                                        Icons.new_releases_rounded,
+                                        size: 45,
+                                      ),
+
+                                      Text(
+                                        "Thane",
+                                        textAlign: TextAlign.center,
+                                        style: TextStyle(
+                                            fontSize: 17,
+                                            fontWeight: FontWeight.w600
+                                        ),
+                                      )
+                                    ],
+                                  ),
+                                ),
+                              )
+                          ),
+                        ),
+
+                        Expanded(
+                          child: SizedBox(
+                              height: 110,
+                              width: 110,
+                              // color: Colors.pink,
+                              child: GestureDetector(
+                                onTap: () {
+                                  debugPrint("Palghar Clicked");
+
+                                  // Navigator.push(
+                                  //     context,
+                                  //     MaterialPageRoute(builder: (context) => const HomeScreen(categoryId: "20547"))
+                                  // );
+                                },
+                                child: Card(
+                                  elevation: 6,
+                                  child: Column(
+                                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                    crossAxisAlignment: CrossAxisAlignment.center,
+                                    children: const [
+                                      Icon(
+                                        Icons.new_releases_rounded,
+                                        size: 45,
+                                      ),
+
+                                      Text(
+                                        "Palghar",
+                                        textAlign: TextAlign.center,
+                                        style: TextStyle(
+                                            fontSize: 17,
+                                            fontWeight: FontWeight.w600
+                                        ),
+                                      )
+                                    ],
+                                  ),
+                                ),
+                              )
+                          ),
+                        ),
+
+                        Expanded(
+                          child: SizedBox(
+                              height: 110,
+                              width: 110,
+                              // color: Colors.pink,
+                              child: GestureDetector(
+                                onTap: () {
+                                  debugPrint("Maharashtra Clicked");
+
+                                  // Navigator.push(
+                                  //     context,
+                                  //     MaterialPageRoute(builder: (context) => const HomeScreen(categoryId: "20551"))
+                                  // );
+                                },
+                                child: Card(
+                                  elevation: 6,
+                                  child: Column(
+                                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                    crossAxisAlignment: CrossAxisAlignment.center,
+                                    children: const [
+                                      Icon(
+                                        Icons.new_releases_rounded,
+                                        size: 45,
+                                      ),
+
+                                      Text(
+                                        "Maharashtra",
+                                        textAlign: TextAlign.center,
+                                        style: TextStyle(
+                                            fontSize: 17,
+                                            fontWeight: FontWeight.w600
+                                        ),
+                                      )
+                                    ],
+                                  ),
+                                ),
+                              )
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+
+                  const SizedBox(
+                    height: 15,
+                  ),
+
+                  SizedBox(
+                    height: 110,
+                    child: Row(
+                      children: [
+                        Expanded(
+                          child: SizedBox(
+                              height: 110,
+                              width: 110,
+                              // color: Colors.pink,
+                              child: GestureDetector(
+                                onTap: () {
+                                  debugPrint("Delhi Clicked");
+                                },
+                                child: Card(
+                                  elevation: 6,
+                                  child: Column(
+                                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                    crossAxisAlignment: CrossAxisAlignment.center,
+                                    children: const [
+                                      Icon(
+                                        Icons.new_releases_rounded,
+                                        size: 45,
+                                      ),
+
+                                      Text(
+                                        "Delhi",
+                                        textAlign: TextAlign.center,
+                                        style: TextStyle(
+                                            fontSize: 17,
+                                            fontWeight: FontWeight.w600
+                                        ),
+                                      )
+                                    ],
+                                  ),
+                                ),
+                              )
+                          ),
+                        ),
+
+                        Expanded(
+                          child: SizedBox(
+                              height: 110,
+                              width: 110,
+                              // color: Colors.pink,
+                              child: GestureDetector(
+                                onTap: () {
+                                  debugPrint("Pune Clicked");
+                                },
+                                child: Card(
+                                  elevation: 6,
+                                  child: Column(
+                                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                    crossAxisAlignment: CrossAxisAlignment.center,
+                                    children: const [
+                                      Icon(
+                                        Icons.new_releases_rounded,
+                                        size: 45,
+                                      ),
+
+                                      Text(
+                                        "Pune",
+                                        textAlign: TextAlign.center,
+                                        style: TextStyle(
+                                            fontSize: 17,
+                                            fontWeight: FontWeight.w600
+                                        ),
+                                      )
+                                    ],
+                                  ),
+                                ),
+                              )
+                          ),
+                        ),
+
+                        Expanded(
+                          child: SizedBox(
+                              height: 110,
+                              width: 110,
+                              // color: Colors.pink,
+                              child: GestureDetector(
+                                onTap: () {
+                                  debugPrint("International Clicked");
+                                },
+                                child: Card(
+                                  elevation: 6,
+                                  child: Column(
+                                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                    crossAxisAlignment: CrossAxisAlignment.center,
+                                    children: const [
+                                      Icon(
+                                        Icons.new_releases_rounded,
+                                        size: 45,
+                                      ),
+
+                                      Text(
+                                        "International",
+                                        textAlign: TextAlign.center,
+                                        style: TextStyle(
+                                            fontSize: 17,
+                                            fontWeight: FontWeight.w600
+                                        ),
+                                      )
+                                    ],
+                                  ),
+                                ),
+                              )
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+
+                  const SizedBox(
+                    height: 15,
+                  ),
+
+                  SizedBox(
+                    height: 110,
+                    child: Row(
+                      children: [
+                        Expanded(
+                          child: SizedBox(
+                              height: 110,
+                              width: 110,
+                              // color: Colors.pink,
+                              child: GestureDetector(
+                                onTap: () {
+                                  debugPrint("Assembly Election Clicked");
+                                },
+                                child: Card(
+                                  elevation: 6,
+                                  child: Column(
+                                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                    crossAxisAlignment: CrossAxisAlignment.center,
+                                    children: const [
+                                      Icon(
+                                        Icons.new_releases_rounded,
+                                        size: 45,
+                                      ),
+
+                                      Text(
+                                        "Assembly Election",
+                                        textAlign: TextAlign.center,
+                                        style: TextStyle(
+                                            fontSize: 17,
+                                            fontWeight: FontWeight.w600
+                                        ),
+                                      )
+                                    ],
+                                  ),
+                                ),
+                              )
+                          ),
+                        ),
+
+                        Expanded(
+                          child: SizedBox(
+                              height: 110,
+                              width: 110,
+                              // color: Colors.pink,
+                              child: GestureDetector(
+                                onTap: () {
+                                  debugPrint("Festival Galli Clicked");
+                                },
+                                child: Card(
+                                  elevation: 6,
+                                  child: Column(
+                                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                    crossAxisAlignment: CrossAxisAlignment.center,
+                                    children: const [
+                                      Icon(
+                                        Icons.new_releases_rounded,
+                                        size: 45,
+                                      ),
+
+                                      Text(
+                                        "Festival Galli",
+                                        textAlign: TextAlign.center,
+                                        style: TextStyle(
+                                            fontSize: 17,
+                                            fontWeight: FontWeight.w600
+                                        ),
+                                      )
+                                    ],
+                                  ),
+                                ),
+                              )
+                          ),
+                        ),
+
                       ],
                     ),
                   ),
