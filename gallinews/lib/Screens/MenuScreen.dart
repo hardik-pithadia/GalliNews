@@ -612,10 +612,10 @@ class _MenuScreenState extends State<MenuScreen>
                                 onTap: () {
                                   debugPrint("Desh Clicked");
 
-                                  // Navigator.push(
-                                  //     context,
-                                  //     MaterialPageRoute(builder: (context) => const HomeScreen(categoryId: "20538"))
-                                  // );
+                                  Navigator.push(
+                                      context,
+                                      MaterialPageRoute(builder: (context) => const HomeScreen(categoryId: "20541"))
+                                  );
                                 },
                                 child: Card(
                                   elevation: 6,
@@ -671,6 +671,11 @@ class _MenuScreenState extends State<MenuScreen>
                                                 GestureDetector(
                                                   onTap: () {
                                                     debugPrint("Andheri East 166");
+
+                                                    Navigator.push(
+                                                        context,
+                                                        MaterialPageRoute(builder: (context) => const HomeScreen(categoryId: "20560"))
+                                                    );
                                                   },
                                                   child: const Text(
                                                       "Andheri East 166",
@@ -686,6 +691,10 @@ class _MenuScreenState extends State<MenuScreen>
                                                 GestureDetector(
                                                   onTap: () {
                                                     debugPrint("Andheri West 165");
+                                                    Navigator.push(
+                                                        context,
+                                                        MaterialPageRoute(builder: (context) => const HomeScreen(categoryId: "20561"))
+                                                    );
                                                   },
                                                   child: const Text(
                                                     "Andheri West 165",
@@ -701,6 +710,11 @@ class _MenuScreenState extends State<MenuScreen>
                                                 GestureDetector(
                                                   onTap: () {
                                                     debugPrint("Bandra East 176");
+
+                                                    Navigator.push(
+                                                        context,
+                                                        MaterialPageRoute(builder: (context) => const HomeScreen(categoryId: "20563"))
+                                                    );
                                                   },
                                                   child: const Text(
                                                     "Bandra East 176",
@@ -716,6 +730,11 @@ class _MenuScreenState extends State<MenuScreen>
                                                 GestureDetector(
                                                   onTap: () {
                                                     debugPrint("Bandra West 177");
+
+                                                    Navigator.push(
+                                                        context,
+                                                        MaterialPageRoute(builder: (context) => const HomeScreen(categoryId: "20564"))
+                                                    );
                                                   },
                                                   child: const Text(
                                                     "Bandra West 177",
@@ -731,6 +750,11 @@ class _MenuScreenState extends State<MenuScreen>
                                                 GestureDetector(
                                                   onTap: () {
                                                     debugPrint("Bhandup West 157");
+
+                                                    Navigator.push(
+                                                        context,
+                                                        MaterialPageRoute(builder: (context) => const HomeScreen(categoryId: "20566"))
+                                                    );
                                                   },
                                                   child: const Text(
                                                     "Bhandup West 157",
@@ -746,6 +770,11 @@ class _MenuScreenState extends State<MenuScreen>
                                                 GestureDetector(
                                                   onTap: () {
                                                     debugPrint("Borivali 152");
+
+                                                    Navigator.push(
+                                                        context,
+                                                        MaterialPageRoute(builder: (context) => const HomeScreen(categoryId: "20568"))
+                                                    );
                                                   },
                                                   child: const Text(
                                                     "Borivali 152",
@@ -761,6 +790,11 @@ class _MenuScreenState extends State<MenuScreen>
                                                 GestureDetector(
                                                   onTap: () {
                                                     debugPrint("Byculla 184");
+
+                                                    Navigator.push(
+                                                        context,
+                                                        MaterialPageRoute(builder: (context) => const HomeScreen(categoryId: "20569"))
+                                                    );
                                                   },
                                                   child: const Text(
                                                     "Byculla 184",
@@ -776,6 +810,11 @@ class _MenuScreenState extends State<MenuScreen>
                                                 GestureDetector(
                                                   onTap: () {
                                                     debugPrint("Chandivali 168");
+
+                                                    Navigator.push(
+                                                        context,
+                                                        MaterialPageRoute(builder: (context) => const HomeScreen(categoryId: "20570"))
+                                                    );
                                                   },
                                                   child: const Text(
                                                     "Chandivali 168",
@@ -791,6 +830,11 @@ class _MenuScreenState extends State<MenuScreen>
                                                 GestureDetector(
                                                   onTap: () {
                                                     debugPrint("Charkop 161");
+
+                                                    Navigator.push(
+                                                        context,
+                                                        MaterialPageRoute(builder: (context) => const HomeScreen(categoryId: "20561"))
+                                                    );
                                                   },
                                                   child: const Text(
                                                     "Charkop 161",
@@ -806,6 +850,11 @@ class _MenuScreenState extends State<MenuScreen>
                                                 GestureDetector(
                                                   onTap: () {
                                                     debugPrint("Chembur 173");
+
+                                                    Navigator.push(
+                                                        context,
+                                                        MaterialPageRoute(builder: (context) => const HomeScreen(categoryId: "20561"))
+                                                    );
                                                   },
                                                   child: const Text(
                                                     "Chembur 173",
@@ -821,6 +870,11 @@ class _MenuScreenState extends State<MenuScreen>
                                                 GestureDetector(
                                                   onTap: () {
                                                     debugPrint("Colaba 187");
+
+                                                    Navigator.push(
+                                                        context,
+                                                        MaterialPageRoute(builder: (context) => const HomeScreen(categoryId: "20573"))
+                                                    );
                                                   },
                                                   child: const Text(
                                                     "Colaba 187",
@@ -836,6 +890,11 @@ class _MenuScreenState extends State<MenuScreen>
                                                 GestureDetector(
                                                   onTap: () {
                                                     debugPrint("Dahisar 153");
+
+                                                    Navigator.push(
+                                                        context,
+                                                        MaterialPageRoute(builder: (context) => const HomeScreen(categoryId: "20574"))
+                                                    );
                                                   },
                                                   child: const Text(
                                                     "Dahisar 153",
@@ -851,6 +910,11 @@ class _MenuScreenState extends State<MenuScreen>
                                                 GestureDetector(
                                                   onTap: () {
                                                     debugPrint("Dharavi 178");
+
+                                                    Navigator.push(
+                                                        context,
+                                                        MaterialPageRoute(builder: (context) => const HomeScreen(categoryId: "20575"))
+                                                    );
                                                   },
                                                   child: const Text(
                                                     "Dharavi 178",
@@ -866,6 +930,11 @@ class _MenuScreenState extends State<MenuScreen>
                                                 GestureDetector(
                                                   onTap: () {
                                                     debugPrint("Dindoshi 159");
+
+                                                    Navigator.push(
+                                                        context,
+                                                        MaterialPageRoute(builder: (context) => const HomeScreen(categoryId: "20576"))
+                                                    );
                                                   },
                                                   child: const Text(
                                                     "Dindoshi 159",
@@ -881,6 +950,11 @@ class _MenuScreenState extends State<MenuScreen>
                                                 GestureDetector(
                                                   onTap: () {
                                                     debugPrint("Dongri");
+
+                                                    Navigator.push(
+                                                        context,
+                                                        MaterialPageRoute(builder: (context) => const HomeScreen(categoryId: "20577"))
+                                                    );
                                                   },
                                                   child: const Text(
                                                     "Dongri",
@@ -896,6 +970,11 @@ class _MenuScreenState extends State<MenuScreen>
                                                 GestureDetector(
                                                   onTap: () {
                                                     debugPrint("Ghatkoper East 170");
+
+                                                    Navigator.push(
+                                                        context,
+                                                        MaterialPageRoute(builder: (context) => const HomeScreen(categoryId: "20578"))
+                                                    );
                                                   },
                                                   child: const Text(
                                                     "Ghatkoper East 170",
@@ -911,6 +990,11 @@ class _MenuScreenState extends State<MenuScreen>
                                                 GestureDetector(
                                                   onTap: () {
                                                     debugPrint("Ghatkoper West 169");
+
+                                                    Navigator.push(
+                                                        context,
+                                                        MaterialPageRoute(builder: (context) => const HomeScreen(categoryId: "20579"))
+                                                    );
                                                   },
                                                   child: const Text(
                                                     "Ghatkoper West 169",
@@ -926,6 +1010,11 @@ class _MenuScreenState extends State<MenuScreen>
                                                 GestureDetector(
                                                   onTap: () {
                                                     debugPrint("Goregaon 163");
+
+                                                    Navigator.push(
+                                                        context,
+                                                        MaterialPageRoute(builder: (context) => const HomeScreen(categoryId: "20580"))
+                                                    );
                                                   },
                                                   child: const Text(
                                                     "Goregaon 163",
@@ -941,6 +1030,11 @@ class _MenuScreenState extends State<MenuScreen>
                                                 GestureDetector(
                                                   onTap: () {
                                                     debugPrint("Jogeshwari East 158");
+
+                                                    Navigator.push(
+                                                        context,
+                                                        MaterialPageRoute(builder: (context) => const HomeScreen(categoryId: "20581"))
+                                                    );
                                                   },
                                                   child: const Text(
                                                     "Jogeshwari East 158",
@@ -956,6 +1050,11 @@ class _MenuScreenState extends State<MenuScreen>
                                                 GestureDetector(
                                                   onTap: () {
                                                     debugPrint("Kalina 175");
+
+                                                    Navigator.push(
+                                                        context,
+                                                        MaterialPageRoute(builder: (context) => const HomeScreen(categoryId: "20582"))
+                                                    );
                                                   },
                                                   child: const Text(
                                                     "Kalina 175",
@@ -971,6 +1070,11 @@ class _MenuScreenState extends State<MenuScreen>
                                                 GestureDetector(
                                                   onTap: () {
                                                     debugPrint("Kandivali East 160");
+
+                                                    Navigator.push(
+                                                        context,
+                                                        MaterialPageRoute(builder: (context) => const HomeScreen(categoryId: "20584"))
+                                                    );
                                                   },
                                                   child: const Text(
                                                     "Kandivali East 160",
@@ -986,6 +1090,11 @@ class _MenuScreenState extends State<MenuScreen>
                                                 GestureDetector(
                                                   onTap: () {
                                                     debugPrint("Kurla 174");
+
+                                                    Navigator.push(
+                                                        context,
+                                                        MaterialPageRoute(builder: (context) => const HomeScreen(categoryId: "20586"))
+                                                    );
                                                   },
                                                   child: const Text(
                                                     "Kurla 174",
@@ -1001,6 +1110,11 @@ class _MenuScreenState extends State<MenuScreen>
                                                 GestureDetector(
                                                   onTap: () {
                                                     debugPrint("Mahim 181");
+
+                                                    Navigator.push(
+                                                        context,
+                                                        MaterialPageRoute(builder: (context) => const HomeScreen(categoryId: "20587"))
+                                                    );
                                                   },
                                                   child: const Text(
                                                     "Mahim 181",
@@ -1016,6 +1130,11 @@ class _MenuScreenState extends State<MenuScreen>
                                                 GestureDetector(
                                                   onTap: () {
                                                     debugPrint("Malad West 162");
+
+                                                    Navigator.push(
+                                                        context,
+                                                        MaterialPageRoute(builder: (context) => const HomeScreen(categoryId: "20588"))
+                                                    );
                                                   },
                                                   child: const Text(
                                                     "Malad West 162",
@@ -1031,6 +1150,11 @@ class _MenuScreenState extends State<MenuScreen>
                                                 GestureDetector(
                                                   onTap: () {
                                                     debugPrint("Malbar Hill 185");
+
+                                                    Navigator.push(
+                                                        context,
+                                                        MaterialPageRoute(builder: (context) => const HomeScreen(categoryId: "20589"))
+                                                    );
                                                   },
                                                   child: const Text(
                                                     "Malbar Hill 185",
@@ -1046,6 +1170,11 @@ class _MenuScreenState extends State<MenuScreen>
                                                 GestureDetector(
                                                   onTap: () {
                                                     debugPrint("Mankhurd 171");
+
+                                                    Navigator.push(
+                                                        context,
+                                                        MaterialPageRoute(builder: (context) => const HomeScreen(categoryId: "20590"))
+                                                    );
                                                   },
                                                   child: const Text(
                                                     "Mankhurd 171",
@@ -1061,6 +1190,11 @@ class _MenuScreenState extends State<MenuScreen>
                                                 GestureDetector(
                                                   onTap: () {
                                                     debugPrint("Mumbadevi 186");
+
+                                                    Navigator.push(
+                                                        context,
+                                                        MaterialPageRoute(builder: (context) => const HomeScreen(categoryId: "20592"))
+                                                    );
                                                   },
                                                   child: const Text(
                                                     "Mumbadevi 186",
@@ -1076,6 +1210,11 @@ class _MenuScreenState extends State<MenuScreen>
                                                 GestureDetector(
                                                   onTap: () {
                                                     debugPrint("Mumbai");
+
+                                                    Navigator.push(
+                                                        context,
+                                                        MaterialPageRoute(builder: (context) => const HomeScreen(categoryId: "20544"))
+                                                    );
                                                   },
                                                   child: const Text(
                                                     "Mumbai",
@@ -1091,6 +1230,11 @@ class _MenuScreenState extends State<MenuScreen>
                                                 GestureDetector(
                                                   onTap: () {
                                                     debugPrint("Shiwdi 183");
+
+                                                    Navigator.push(
+                                                        context,
+                                                        MaterialPageRoute(builder: (context) => const HomeScreen(categoryId: "20549"))
+                                                    );
                                                   },
                                                   child: const Text(
                                                     "Shiwdi 183",
@@ -1106,6 +1250,11 @@ class _MenuScreenState extends State<MenuScreen>
                                                 GestureDetector(
                                                   onTap: () {
                                                     debugPrint("Sion Koliwada 179");
+
+                                                    Navigator.push(
+                                                        context,
+                                                        MaterialPageRoute(builder: (context) => const HomeScreen(categoryId: "20550"))
+                                                    );
                                                   },
                                                   child: const Text(
                                                     "Sion Koliwada 179",
@@ -1121,6 +1270,11 @@ class _MenuScreenState extends State<MenuScreen>
                                                 GestureDetector(
                                                   onTap: () {
                                                     debugPrint("Versova 164");
+
+                                                    Navigator.push(
+                                                        context,
+                                                        MaterialPageRoute(builder: (context) => const HomeScreen(categoryId: "20555"))
+                                                    );
                                                   },
                                                   child: const Text(
                                                     "Versova 164",
@@ -1136,6 +1290,11 @@ class _MenuScreenState extends State<MenuScreen>
                                                 GestureDetector(
                                                   onTap: () {
                                                     debugPrint("Vikhroli 156");
+
+                                                    Navigator.push(
+                                                        context,
+                                                        MaterialPageRoute(builder: (context) => const HomeScreen(categoryId: "20556"))
+                                                    );
                                                   },
                                                   child: const Text(
                                                     "Vikhroli 156",
@@ -1151,6 +1310,11 @@ class _MenuScreenState extends State<MenuScreen>
                                                 GestureDetector(
                                                   onTap: () {
                                                     debugPrint("Vile Parle 167");
+
+                                                    Navigator.push(
+                                                        context,
+                                                        MaterialPageRoute(builder: (context) => const HomeScreen(categoryId: "20557"))
+                                                    );
                                                   },
                                                   child: const Text(
                                                     "Vile Parle 167",
@@ -1166,6 +1330,11 @@ class _MenuScreenState extends State<MenuScreen>
                                                 GestureDetector(
                                                   onTap: () {
                                                     debugPrint("Wadala-Dadar 180");
+
+                                                    Navigator.push(
+                                                        context,
+                                                        MaterialPageRoute(builder: (context) => const HomeScreen(categoryId: "20558"))
+                                                    );
                                                   },
                                                   child: const Text(
                                                     "Wadala-Dadar 180",
@@ -1181,6 +1350,11 @@ class _MenuScreenState extends State<MenuScreen>
                                                 GestureDetector(
                                                   onTap: () {
                                                     debugPrint("Worli 182");
+
+                                                    Navigator.push(
+                                                        context,
+                                                        MaterialPageRoute(builder: (context) => const HomeScreen(categoryId: "20559"))
+                                                    );
                                                   },
                                                   child: const Text(
                                                     "Worli 182",
@@ -1196,6 +1370,11 @@ class _MenuScreenState extends State<MenuScreen>
                                                 GestureDetector(
                                                   onTap: () {
                                                     debugPrint("Navi Mumbai");
+
+                                                    Navigator.push(
+                                                        context,
+                                                        MaterialPageRoute(builder: (context) => const HomeScreen(categoryId: "20545"))
+                                                    );
                                                   },
                                                   child: const Text(
                                                     "Navi Mumbai",
@@ -1271,6 +1450,11 @@ class _MenuScreenState extends State<MenuScreen>
                                                 GestureDetector(
                                                   onTap: () {
                                                     debugPrint("Belapur");
+
+                                                    Navigator.push(
+                                                        context,
+                                                        MaterialPageRoute(builder: (context) => const HomeScreen(categoryId: "20565"))
+                                                    );
                                                   },
                                                   child: const Text(
                                                     "Belapur",
@@ -1286,6 +1470,11 @@ class _MenuScreenState extends State<MenuScreen>
                                                 GestureDetector(
                                                   onTap: () {
                                                     debugPrint("Kharghar");
+
+                                                    Navigator.push(
+                                                        context,
+                                                        MaterialPageRoute(builder: (context) => const HomeScreen(categoryId: "20585"))
+                                                    );
                                                   },
                                                   child: const Text(
                                                     "Kharghar",
@@ -1301,6 +1490,11 @@ class _MenuScreenState extends State<MenuScreen>
                                                 GestureDetector(
                                                   onTap: () {
                                                     debugPrint("Navi Mumbai");
+
+                                                    Navigator.push(
+                                                        context,
+                                                        MaterialPageRoute(builder: (context) => const HomeScreen(categoryId: "20545"))
+                                                    );
                                                   },
                                                   child: const Text(
                                                     "Navi Mumbai",
@@ -1316,6 +1510,11 @@ class _MenuScreenState extends State<MenuScreen>
                                                 GestureDetector(
                                                   onTap: () {
                                                     debugPrint("Panvel");
+
+                                                    Navigator.push(
+                                                        context,
+                                                        MaterialPageRoute(builder: (context) => const HomeScreen(categoryId: "20546"))
+                                                    );
                                                   },
                                                   child: const Text(
                                                     "Panvel",
@@ -1331,6 +1530,11 @@ class _MenuScreenState extends State<MenuScreen>
                                                 GestureDetector(
                                                   onTap: () {
                                                     debugPrint("Vashi");
+
+                                                    Navigator.push(
+                                                        context,
+                                                        MaterialPageRoute(builder: (context) => const HomeScreen(categoryId: "20554"))
+                                                    );
                                                   },
                                                   child: const Text(
                                                     "Vashi",
@@ -1346,11 +1550,6 @@ class _MenuScreenState extends State<MenuScreen>
 
                                         );
                                       });
-
-                                  // Navigator.push(
-                                  //     context,
-                                  //     MaterialPageRoute(builder: (context) => const HomeScreen(categoryId: "20538"))
-                                  // );
                                 },
                                 child: Card(
                                   elevation: 6,
@@ -1417,6 +1616,11 @@ class _MenuScreenState extends State<MenuScreen>
                                                 GestureDetector(
                                                   onTap: () {
                                                     debugPrint("Bhiwandi");
+
+                                                    Navigator.push(
+                                                        context,
+                                                        MaterialPageRoute(builder: (context) => const HomeScreen(categoryId: "20567"))
+                                                    );
                                                   },
                                                   child: const Text(
                                                     "Bhiwandi",
@@ -1432,6 +1636,11 @@ class _MenuScreenState extends State<MenuScreen>
                                                 GestureDetector(
                                                   onTap: () {
                                                     debugPrint("Kalyan");
+
+                                                    Navigator.push(
+                                                        context,
+                                                        MaterialPageRoute(builder: (context) => const HomeScreen(categoryId: "20583"))
+                                                    );
                                                   },
                                                   child: const Text(
                                                     "Kalyan",
@@ -1447,6 +1656,11 @@ class _MenuScreenState extends State<MenuScreen>
                                                 GestureDetector(
                                                   onTap: () {
                                                     debugPrint("Mira-Bhayandar");
+
+                                                    Navigator.push(
+                                                        context,
+                                                        MaterialPageRoute(builder: (context) => const HomeScreen(categoryId: "20591"))
+                                                    );
                                                   },
                                                   child: const Text(
                                                     "Mira-Bhayandar",
@@ -1462,6 +1676,11 @@ class _MenuScreenState extends State<MenuScreen>
                                                 GestureDetector(
                                                   onTap: () {
                                                     debugPrint("Mumbra");
+
+                                                    Navigator.push(
+                                                        context,
+                                                        MaterialPageRoute(builder: (context) => const HomeScreen(categoryId: "20593"))
+                                                    );
                                                   },
                                                   child: const Text(
                                                     "Mumbra",
@@ -1477,6 +1696,11 @@ class _MenuScreenState extends State<MenuScreen>
                                                 GestureDetector(
                                                   onTap: () {
                                                     debugPrint("Ulhasnagar");
+
+                                                    Navigator.push(
+                                                        context,
+                                                        MaterialPageRoute(builder: (context) => const HomeScreen(categoryId: "20553"))
+                                                    );
                                                   },
                                                   child: const Text(
                                                     "Ulhasnagar",
@@ -1493,10 +1717,6 @@ class _MenuScreenState extends State<MenuScreen>
                                         );
                                       });
 
-                                  // Navigator.push(
-                                  //     context,
-                                  //     MaterialPageRoute(builder: (context) => const HomeScreen(categoryId: "20539"))
-                                  // );
                                 },
                                 child: Card(
                                   elevation: 6,
@@ -1753,6 +1973,11 @@ class _MenuScreenState extends State<MenuScreen>
                               child: GestureDetector(
                                 onTap: () {
                                   debugPrint("Delhi Clicked");
+
+                                  Navigator.push(
+                                      context,
+                                      MaterialPageRoute(builder: (context) => const HomeScreen(categoryId: "20540"))
+                                  );
                                 },
                                 child: Card(
                                   elevation: 6,
@@ -1788,6 +2013,11 @@ class _MenuScreenState extends State<MenuScreen>
                               child: GestureDetector(
                                 onTap: () {
                                   debugPrint("Pune Clicked");
+
+                                  Navigator.push(
+                                      context,
+                                      MaterialPageRoute(builder: (context) => const HomeScreen(categoryId: "20548"))
+                                  );
                                 },
                                 child: Card(
                                   elevation: 6,
@@ -1823,6 +2053,7 @@ class _MenuScreenState extends State<MenuScreen>
                               child: GestureDetector(
                                 onTap: () {
                                   debugPrint("International Clicked");
+
                                 },
                                 child: Card(
                                   elevation: 6,
