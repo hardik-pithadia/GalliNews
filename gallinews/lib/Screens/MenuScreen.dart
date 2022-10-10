@@ -2054,6 +2054,11 @@ class _MenuScreenState extends State<MenuScreen>
                                 onTap: () {
                                   debugPrint("International Clicked");
 
+                                  Navigator.push(
+                                      context,
+                                      MaterialPageRoute(builder: (context) => const HomeScreen(categoryId: "25433"))
+                                  );
+
                                 },
                                 child: Card(
                                   elevation: 6,
@@ -2100,6 +2105,10 @@ class _MenuScreenState extends State<MenuScreen>
                               child: GestureDetector(
                                 onTap: () {
                                   debugPrint("Assembly Election Clicked");
+                                  Navigator.push(
+                                      context,
+                                      MaterialPageRoute(builder: (context) => const HomeScreen(categoryId: "25435"))
+                                  );
                                 },
                                 child: Card(
                                   elevation: 6,
@@ -2135,6 +2144,11 @@ class _MenuScreenState extends State<MenuScreen>
                               child: GestureDetector(
                                 onTap: () {
                                   debugPrint("Festival Galli Clicked");
+
+                                  Navigator.push(
+                                      context,
+                                      MaterialPageRoute(builder: (context) => const HomeScreen(categoryId: "25434"))
+                                  );
                                 },
                                 child: Card(
                                   elevation: 6,
