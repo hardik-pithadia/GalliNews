@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:easy_search_bar/easy_search_bar.dart';
 import 'package:gallinews/Screens/HomeScreen.dart';
-import 'package:intrinsic_grid_view/intrinsic_grid_view.dart';
+// import 'package:intrinsic_grid_view/intrinsic_grid_view.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class MenuScreen extends StatefulWidget
@@ -1772,6 +1772,11 @@ class _MenuScreenState extends State<MenuScreen>
                                                 GestureDetector(
                                                   onTap: () {
                                                     debugPrint("Dahanu Road");
+
+                                                    Navigator.push(
+                                                        context,
+                                                        MaterialPageRoute(builder: (context) => const HomeScreen(categoryId: "25440"))
+                                                    );
                                                   },
                                                   child: const Text(
                                                     "Dahanu Road",
@@ -1787,6 +1792,11 @@ class _MenuScreenState extends State<MenuScreen>
                                                 GestureDetector(
                                                   onTap: () {
                                                     debugPrint("Vasai-Virar");
+
+                                                    Navigator.push(
+                                                        context,
+                                                        MaterialPageRoute(builder: (context) => const HomeScreen(categoryId: "25441"))
+                                                    );
                                                   },
                                                   child: const Text(
                                                     "Vasai-Virar",
@@ -1862,6 +1872,11 @@ class _MenuScreenState extends State<MenuScreen>
                                                 GestureDetector(
                                                   onTap: () {
                                                     debugPrint("Amravati");
+
+                                                    Navigator.push(
+                                                        context,
+                                                        MaterialPageRoute(builder: (context) => const HomeScreen(categoryId: "25436"))
+                                                    );
                                                   },
                                                   child: const Text(
                                                     "Amravati",
@@ -1877,6 +1892,11 @@ class _MenuScreenState extends State<MenuScreen>
                                                 GestureDetector(
                                                   onTap: () {
                                                     debugPrint("Aurangabad");
+
+                                                    Navigator.push(
+                                                        context,
+                                                        MaterialPageRoute(builder: (context) => const HomeScreen(categoryId: "25437"))
+                                                    );
                                                   },
                                                   child: const Text(
                                                     "Aurangabad",
@@ -1892,6 +1912,11 @@ class _MenuScreenState extends State<MenuScreen>
                                                 GestureDetector(
                                                   onTap: () {
                                                     debugPrint("Nagpur");
+
+                                                    Navigator.push(
+                                                        context,
+                                                        MaterialPageRoute(builder: (context) => const HomeScreen(categoryId: "25438"))
+                                                    );
                                                   },
                                                   child: const Text(
                                                     "Nagpur",
@@ -1907,6 +1932,11 @@ class _MenuScreenState extends State<MenuScreen>
                                                 GestureDetector(
                                                   onTap: () {
                                                     debugPrint("Nasik");
+
+                                                    Navigator.push(
+                                                        context,
+                                                        MaterialPageRoute(builder: (context) => const HomeScreen(categoryId: "25439"))
+                                                    );
                                                   },
                                                   child: const Text(
                                                     "Nasik",
